@@ -13,6 +13,21 @@ public class BinaryTreeSolutions {
     }
 
     // -------------------- 1. SAME TREE --------------------
+    /**
+     * Definition for a binary tree node.
+     * public class TreeNode {
+     * int val;
+     * TreeNode left;
+     * TreeNode right;
+     * TreeNode() {}
+     * TreeNode(int val) { this.val = val; }
+     * TreeNode(int val, TreeNode left, TreeNode right) {
+     * this.val = val;
+     * this.left = left;
+     * this.right = right;
+     * }
+     * }
+     */
     public static boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) return true;
         if (p == null || q == null) return false;
@@ -22,6 +37,21 @@ public class BinaryTreeSolutions {
     }
 
     // -------------------- 2. SYMMETRIC TREE --------------------
+    /**
+     * Definition for a binary tree node.
+     * public class TreeNode {
+     * int val;
+     * TreeNode left;
+     * TreeNode right;
+     * TreeNode() {}
+     * TreeNode(int val) { this.val = val; }
+     * TreeNode(int val, TreeNode left, TreeNode right) {
+     * this.val = val;
+     * this.left = left;
+     * this.right = right;
+     * }
+     * }
+     */
     public static boolean isSymmetric(TreeNode root) {
         if (root == null) return true;
         return isMirror(root.left, root.right);
@@ -36,7 +66,22 @@ public class BinaryTreeSolutions {
     }
 
     // -------------------- 3. BALANCED BINARY TREE --------------------
-    public static boolean isBalanced(TreeNode root) {
+
+    /**
+     * Definition for a binary tree node.
+     * public class TreeNode {
+     * int val;
+     * TreeNode left;
+     * TreeNode right;
+     * TreeNode() {}
+     * TreeNode(int val) { this.val = val; }
+     * TreeNode(int val, TreeNode left, TreeNode right) {
+     * this.val = val;
+     * this.left = left;
+     * this.right = right;
+     * }
+     * }
+     */public static boolean isBalanced(TreeNode root) {
         return checkHeight(root) != -1;
     }
 
@@ -51,6 +96,21 @@ public class BinaryTreeSolutions {
     }
 
     // -------------------- 4. INVERT BINARY TREE --------------------
+    /**
+     * Definition for a binary tree node.
+     * public class TreeNode {
+     * int val;
+     * TreeNode left;
+     * TreeNode right;
+     * TreeNode() {}
+     * TreeNode(int val) { this.val = val; }
+     * TreeNode(int val, TreeNode left, TreeNode right) {
+     * this.val = val;
+     * this.left = left;
+     * this.right = right;
+     * }
+     * }
+     */
     public static TreeNode invertTree(TreeNode root) {
         if (root == null) return null;
         TreeNode temp = root.left;
