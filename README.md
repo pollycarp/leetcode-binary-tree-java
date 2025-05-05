@@ -38,7 +38,7 @@ After invert (root.left.val): 3
 
 ## 👨‍💻 Author Contact
 
-- **Name:** Polycarp Kingori
+- **Name:** Mark Polycarp
 - **Email:** markpollycarp@gmail.com
 - **Phone:** +44 7429 144739
 
